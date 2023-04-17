@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "@parcel/config-default"
+  ],
+  "namers": [
+    "parcel-namer-custom", "..."
+  ],
+	"optimizers": {
+		"*.js": [
+			"...",
+			"@rbf/parcel-optimizer-javascript-obfuscator"
+		]
+	}
+}

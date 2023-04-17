@@ -1,0 +1,45 @@
+{
+	"name": "dev-front",
+	"version": "1.0.1",
+	"license": "SEE LICENSE IN licenca.txt",
+	"author": "INGAGE DIGITAL",
+	"scripts": {
+		"dev": "parcel src/index.html",
+		"static": "parcel build src/index.html --dist-dir='../dist/' --public-url='./' --no-cache --no-content-hash --no-optimize",
+		"watch": "parcel watch src/index.html --dist-dir='../' --public-url='./' --no-cache --no-content-hash",
+		"livereload": "livereload -e php,js,css -x \"/.dev//\" ../",
+		"prebuild": "rm -rf ../res/",
+		"build": "parcel build src/index.html --dist-dir='../' --public-url='./' --no-cache --no-source-maps --no-content-hash",
+		"postbuild": "rm -f ../*.js && rm -f ../*.map"
+	},
+	"parcel-namer-custom": {
+		".css$": "res/css/[name].[hash].[type]",
+		".js$": "res/js/[name].[hash].[type]",
+		".map$": "res/dev/[name].[hash].[type]",
+		".png$": "res/img/[folder]/[name].[type]",
+		".webp$": "res/img/[name].[type]",
+		".jpg$": "res/img/[folder]/[name].[type]",
+		".jpeg$": "res/img/[folder]/[name].[type]",
+		".pdf$": "res/img/[folder]/[name].[type]",
+		".svg$": "res/img/[folder]/[name].[type]",
+		".ico$": "res/img/[name].[hash].[type]",
+		".woff$": "res/fonts/[name].[type]",
+		".ttf$": "res/fonts/[name].[type]",
+		".woff2$": "res/fonts/[name].[type]",
+		".eot$": "res/fonts/[name].[type]"
+	},
+	"devDependencies": {
+		"@parcel/transformer-sass": "^2.8.3",
+		"@parcel/transformer-webmanifest": "^2.8.3",
+		"@rbf/parcel-optimizer-javascript-obfuscator": "^0.2.2",
+		"parcel": "^2.8.3",
+		"parcel-namer-custom": "^0.2.0",
+		"postcss": "^8.4.21",
+		"postcss-combine-media-query": "^1.0.1",
+		"posthtml-include": "^1.7.4",
+		"posthtml-minifier": "^0.1.0"
+	},
+	"dependencies": {
+		"jquery": "^3.6.3"
+	}
+}

@@ -1,0 +1,30 @@
+@mixin media($size) {
+	@if $size == s {
+		@media only screen and (max-width: 479px) {
+			@content;
+		}
+	}
+
+	@else if $size == m {
+		@media only screen and (min-width: 768px) and (max-width: 959px) {
+			@content;
+		}
+	}
+
+	@else if $size == ml {
+		@media only screen and (min-width: 768px) {
+			@content;
+		}
+	}
+
+	@else if $size == l {
+		@media only screen and (min-width: 959px) {
+			@content;
+		}
+	}
+}
+
+@function vwcalc($px) {
+	$rem: 14;
+	@return calc(#{ calc($px / $rem) }rem + 0.01vw);
+}
