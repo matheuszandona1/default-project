@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none"  width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.6875 36.75C12.6875 34.3438 14.6562 32.375 17.0625 32.375L18.9521 24.8167C20.38 19.1051 25.4293 15.0624 31.2812 14.8836C31.1468 14.8795 31.0125 14.875 30.8773 14.875H25.1227C19.1 14.875 13.8503 18.9739 12.3896 24.8167L10.5 32.375C8.09375 32.375 6.125 34.3438 6.125 36.75C6.125 39.1562 8.09375 41.125 10.5 41.125H17.0625C14.6562 41.125 12.6875 39.1561 12.6875 36.75Z" fill="#F1F7E6"/>
+<path d="M49.875 36.75C49.875 39.1562 47.9062 41.125 45.5 41.125H10.5C8.09375 41.125 6.125 39.1562 6.125 36.75C6.125 34.3438 8.09375 32.375 10.5 32.375L12.3896 24.8167C13.8503 18.9739 19.1 14.875 25.1227 14.875H30.8773C36.9 14.875 42.1497 18.9739 43.6104 24.8167L45.5 32.375C47.9062 32.375 49.875 34.3438 49.875 36.75Z" stroke="#87BC25" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.5 32.375H19.25" stroke="#87BC25" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M36.75 32.375H45.5" stroke="#87BC25" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.1875 49.875H53.8125" stroke="#87BC25" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32.375 41.125V49.875" stroke="#87BC25" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M23.625 49.875V41.125" stroke="#87BC25" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M23.625 6.125H32.375" stroke="#FCCC1D" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

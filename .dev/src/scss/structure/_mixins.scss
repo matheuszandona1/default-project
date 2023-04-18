@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&family=Nunito:wght@200;300;400;500;600;700;800&display=swap');
+
+///////////// textos
+@mixin display{
+    font-family: 'Nunito', sans-serif;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 120%;
+    @include media(s){
+        font-size: 40px;
+    }
+}
+@mixin general-title{
+    font-family: 'Nunito', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 120%;
+}
+@mixin general-title-smaller{
+    font-family: 'Nunito', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 120%;
+    @include media(s){
+        font-size: 24px;
+    }
+}
+@mixin sub-title{
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 120%;
+    @include media(s){
+        font-size: 20px;
+    }
+}
+@mixin bold-h4{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 120%; 
+}
+@mixin highlight-links{
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 120%;
+    @include media(s){
+        font-size: 20px;
+        line-height: 100%;
+    }
+
+}
+
+@mixin defaul-text{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; 
+}
+@mixin smaller-text{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 125%;  
+}
+@mixin on-hover-mobile{
+    font-size: 16px;
+    font-weight: 800;
+}
+@mixin primary-btn{
+    @include media(s){
+
+    }
+}
+@mixin non-priority{
+    @include media(s){
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        line-height: 100%;
+        font-weight: 400;
+    }
+}
+
+//////////////////////////////////
+/// sombras
+/////////////////////////////////
+@mixin s-shadow{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.06);
+}
+@mixin m-shadow{
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.06);
+}
+@mixin l-shadow{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+}
+@mixin xl-shadow{
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.06);
+}
+
+//////////////////////////////////
+/// border-radius
+/////////////////////////////////
+
+@mixin xs-border{
+    border-radius: 4px;
+}
+@mixin s-border{
+    border-radius: 8px;
+}
+@mixin m-border{
+    border-radius: 12px;
+}
+@mixin l-border{
+    border-radius: 16px;
+}
+@mixin xl-border{
+    border-radius: 24px;
+}

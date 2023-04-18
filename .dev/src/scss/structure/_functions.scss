@@ -1,0 +1,98 @@
+@mixin media($size) {
+	@if $size == s {
+		@media only screen and (max-width: 479px) {
+			@content;
+		}
+	}
+
+	@else if $size == m {
+		@media only screen and (min-width: 768px) and (max-width: 959px) {
+			@content;
+		}
+	}
+
+	@else if $size == ml {
+		@media only screen and (min-width: 768px) {
+			@content;
+		}
+	}
+
+	@else if $size == l {
+		@media only screen and (min-width: 959px) {
+			@content;
+		}
+	}
+}
+
+@function vwcalc($px) {
+	$rem: 14;
+	@return calc(#{ calc($px / $rem) }rem + 0.01vw);
+}
+
+
+
+// Definir variáveis
+$container-width: 1280px;
+$gutter-width: 24px;
+$mobile-gutter-width: 16px;
+$margin-width: 100px;
+$mobile-margin-width: 24px;
+
+// Definir função de cálculo para largura das colunas
+@function column-width($columns) {
+  @return calc($columns / 12) * 100%;
+}
+
+// Definir mixin para criar classes de colunas
+@mixin make-columns($columns) {
+  width: column-width($columns);
+  float: left;
+  margin-right: $gutter-width;
+
+  // Remover margem direita da última coluna em cada linha
+  &:nth-child(12n) {
+    margin-right: 0;
+  }
+}
+
+// Definir mixin para criar classes de colunas responsivas
+@mixin make-responsive-columns() {
+  @media only screen and (max-width: 767px) {
+    width: column-width(4);
+    margin-right: $mobile-gutter-width;
+
+    // Remover margem direita da última coluna em cada linha
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}
+
+// // Definir classe de container
+// .container {
+//   max-width: $container-width;
+//   margin: 0 auto;
+//   padding: 0 $margin-width;
+//   box-sizing: border-box;
+
+//   // Adicionar clearfix para corrigir floats
+//   &::after {
+//     content: "";
+//     display: table;
+//     clear: both;
+//   }
+// }
+
+// Criar classes de colunas para desktop
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    @include make-columns($i);
+  }
+}
+
+// Criar classes de colunas responsivas para mobile
+@for $i from 1 through 4 {
+  .col-mobile-#{$i} {
+    @include make-responsive-columns();
+  }
+}
