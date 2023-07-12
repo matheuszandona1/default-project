@@ -362,6 +362,9 @@
 					margin-bottom: 0px;
 				}
 			}
+			&-body {
+				@include text;
+			}
 			&-button {
 				color: $texto-resources;
 				&:focus {
