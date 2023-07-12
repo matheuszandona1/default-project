@@ -1,11 +1,11 @@
 // Imports Gerais
-@import './general/normalize';
-@import './general/global';
+@import "./general/normalize";
+@import "./general/global";
 
 // functions de responsividade e grid
-@import './structure/functions';
-@import './structure/mixins';
-@import './structure/variables'
+@import "./structure/functions";
+@import "./structure/mixins";
+@import "./structure/variables";
 
-
-// Variáveis globais e mixins default
+@import "./site/componentes";
+@import "./site/page";

@@ -1,0 +1,133 @@
+.avatar {
+	display: flex;
+	gap: 16px;
+	align-items: center;
+	&__img {
+		img {
+			border-radius: 50%;
+			width: 54px;
+			height: 54px;
+		}
+	}
+	&__title {
+		margin-bottom: 8px;
+		@include text;
+		font-weight: bold;
+		color: $texto-primario;
+	}
+	&__desc {
+		@include small-text;
+		color: $texto-legenda;
+	}
+}
+
+.tag {
+	&__text {
+		text-transform: uppercase;
+		@include text;
+		color: $texto-primario;
+	}
+	background-color: $tag;
+	@include s-border;
+	padding: 12px 20px;
+	display: inline-block;
+}
+
+.form-gap {
+	display: flex;
+	gap: 16px;
+}
+
+input {
+	border: 1px solid $texto-legenda;
+	@include s-border;
+	padding: 16px;
+}
+
+input:focus + label,
+input:valid + label {
+	font-size: 12px;
+	color: $texto-legenda;
+	top: -5px;
+	left: 10px;
+	background: #ffffff;
+	padding: 0px 5px 0px 5px;
+}
+
+.input_wrap {
+	width: auto;
+	height: auto;
+	position: relative;
+	label {
+		img {
+			margin-right: 12px;
+		}
+		font-family: arial;
+		font-size: 16px;
+		color: $texto-legenda;
+		padding: 16px;
+		position: absolute;
+		top: 2px;
+		left: 0;
+		transition: 0.2s ease all;
+		-moz-transition: 0.2s ease all;
+		-webkit-transition: 0.2s ease all;
+		pointer-events: none;
+	}
+	input:focus {
+		outline: none;
+	}
+}
+
+.button__container {
+	display: flex;
+	gap: 36px;
+	max-width: 500px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+}
+
+.button {
+	padding: 10px 24px;
+	text-transform: uppercase;
+	@include text;
+	line-height: 150%;
+	font-weight: bold;
+	text-decoration: none;
+	color: $neutro-50;
+	@include s-border;
+	background: $cor-primaria;
+	display: inline-block;
+	&.no-color {
+		background-color: transparent;
+		color: $cor-primaria;
+	}
+	&.bigger {
+		padding: 17px 24px;
+	}
+	&.border {
+		border: 1px solid #4e2251cc;
+	}
+	&.opacity {
+		background-color: #4e2251cc;
+	}
+	&.white {
+		color: $cor-primaria;
+		background-color: #fff;
+	}
+}
+
+.card-resources {
+	max-width: 397px;
+	padding: 32px 40px;
+	background-color: $cor-primaria-clara;
+	@include s-border;
+	&__icon {
+		padding: 16px;
+		background-color: $neutro-50;
+		display: inline-block;
+		@include s-border;
+		margin-bottom: 24px;
+		color: $texto-resources;
+	}
+}
