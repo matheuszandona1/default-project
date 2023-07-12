@@ -18,6 +18,11 @@
 		@include media(s) {
 			padding: 0 24px;
 		}
+		.button {
+			&:hover {
+				color: $neutro-50;
+			}
+		}
 	}
 	.navbar-nav {
 		gap: 32px;
