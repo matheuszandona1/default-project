@@ -2,6 +2,9 @@
 	&__title {
 		@include general-title;
 		color: $cor-primaria;
+		&.smaller {
+			font-size: 32px;
+		}
 		@include media(s) {
 			text-align: center;
 		}
@@ -67,6 +70,29 @@
 		@include media(s) {
 			flex-direction: column;
 			padding: 20 24px 60px;
+		}
+	}
+	&__form {
+		padding: 64px;
+		background-color: $neutro-50;
+		@include l-border;
+		.default__title {
+			margin-bottom: 32px;
+		}
+		.contact__form {
+			padding: 0px;
+			border-radius: 0px;
+		}
+		.input_wrap {
+			width: 100%;
+			input {
+				width: 100%;
+				max-width: 100%;
+			}
+		}
+		button {
+			display: block;
+			width: 100%;
 		}
 	}
 	&__logo {
@@ -147,6 +173,7 @@
 		gap: 24px;
 		flex-wrap: wrap;
 		margin-bottom: 32px;
+		@include container;
 	}
 }
 .benefits {

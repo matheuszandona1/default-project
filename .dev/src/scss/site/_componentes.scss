@@ -25,7 +25,7 @@
 	&__text {
 		text-transform: uppercase;
 		@include text;
-		color: $texto-primario;
+		color: $tag-texto;
 	}
 	background-color: $tag;
 	@include s-border;
